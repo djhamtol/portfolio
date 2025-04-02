@@ -1,6 +1,3 @@
-
-
-
 const init = () => {
     let baseURl = window.location.hostname
     let url = $("#logoLink").attr("href");
