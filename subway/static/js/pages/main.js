@@ -8,7 +8,7 @@ const init = () => {
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    init();
+    init(); 
 
 })
 
