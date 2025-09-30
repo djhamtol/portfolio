@@ -1,0 +1,160 @@
+body {
+    font-family: font_ns, sans-serif;
+}
+
+#wrap {
+    position: relative;
+    min-width: 1280px;
+}
+
+/* header */
+header {
+    position: absolute; /* wrap 기준 정렬 */
+    /* 상단 초록 실선 삽입 */
+    border-top: 5px solid #009223;
+    width: 100%;
+    height: 165px;
+}
+
+header::after {
+    content: '';
+    position: absolute; /* header 기준 정렬 */
+    top: 164px;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+header .content {
+    /* header 내부 컨텐츠들의 정렬 기준 */
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+header .logo {
+    /* 로고 가운데로 */
+    position: absolute;
+    top: 35px;
+    left: 50%; /* 왼쪽 경계선을 기준으로 부모요소의 50%만큼 이동 */
+    transform: translateX(-50%); /* translate에서 %는 자기자신을 기준으로 이동 */
+}    
+
+header .logo a {
+    /* 로고 이미지 삽입 */
+    background: url("../images/logo_w.png") no-repeat;
+    display: block;
+    width: 202px;
+    height: 40px;
+    /* background-image로 이미지를 삽입할 경우 대체 텍스트 사용법 */
+    text-indent: -9999px;
+    /* text-indent: -9999px;하면 깨짐 현상 등이 발생할 수 있기 때문에 박스 바깥으로 벗어난 텍스트를 가려줘야함 */
+    overflow: hidden;
+}
+
+
+header .util_menu {
+    /* sign 그룹 배치 */
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+header .util_menu ul li {
+    float: left;
+    position: relative;
+}
+
+header .util_menu ul li a {
+    /* 로그인 회원가입 텍스트 조정 */
+    color: #666666;
+    font-size: 13px;
+    display: block; /* line-height적용시키기 위해 */
+    line-height: 30px;
+}
+
+header .util_menu ul .signup {
+    /* 점 있을 자리 만들기 */
+    margin-left: 30px;
+}
+
+header .util_menu .login ~ .signup::before {
+    /* 점 생성 */
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #ddd;
+    border-radius: 50%;
+    /* 점 위치 조정 +)float요소 내부는 또 다른 개념이기 때문에 정렬 필요(float상속x) */
+    position: absolute;
+    left: -16px;
+    top: 50%;
+}
+
+header .util_menu ul .global_subway {
+    margin-left: 15px;
+}
+
+header .util_menu ul .global_subway a {
+    /* 이미지 삽입 */
+    background: url("../images/icon_utill_global.png") no-repeat;
+    /* w, h를 쓰려면 블록요소로 */
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+
+header #gnb {
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    text-align: center; /* 인라인으로 바꾼 ul과 text들을 정렬하기 위함 */
+} 
+
+header #gnb > ul {
+    display: inline-block; /* 1170(gnb크기)->990(자기자신크기) */
+}
+
+header #gnb > ul > li {
+    float: left;
+    width: 165px;
+    position: relative;
+}
+
+header #gnb > ul > li:hover > a.depth1 {
+    color:#009223;
+}
+
+header #gnb > ul > li > a.depth1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #292929;
+    /* padding 값을 명확히 주기 위함이고(inline은 padding이 상하 줄높이에 영향을 주지않음)
+    block이면 text들이 block크기 안에서 정렬되고 inline이면 a태그 자체가 부모요소인 li크기 안에서 정렬됨(인라인요소라서 이미 텍스트 크기만큼이 박스 크기기 때문에 그 안에서 정렬해도 변화 없음) */
+    display: block;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; /* depth1 a태그 cursor: poiner; 안먹힘 해결 */
+}
+
+header #gnb > ul > li > ul.depth2 {
+    /* #gnb > ul > li 기준 */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-top: 87px;
+}
+
+header #gnb ul.depth2 > li > a {
+    font-size: 15px;
+    color: #666666;
+    /* padding값을 주기 위해 */
+    display: block;
+    padding: 8px 0 9px;
+}
+
+
