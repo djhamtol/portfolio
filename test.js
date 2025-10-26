@@ -1,0 +1,1 @@
+console.log("Node.js 설치 확인 완료!");
