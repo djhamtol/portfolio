@@ -16,7 +16,7 @@ $(function() {
     $('#gnb > ul > li > .depth2').stop().slideDown(500);
   });
 
-  $('#gnb > ul > li').on('mouseleave', function(){
+  $('#gnb').on('mouseleave', function(){
     $('header').stop().animate({height:'165'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideUp(500);
   });

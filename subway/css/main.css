@@ -145,6 +145,11 @@ header .util_menu ul .global_subway a {
     /* depth1 a태그 cursor: poiner; 안먹힘 해결 */
 }
 
+#gnb ul.depth2 > li:hover > a {
+    color: #009223;
+    text-decoration: underline;
+}
+
 #gnb > ul > li > ul.depth2 {
     /* #gnb > ul > li 기준 */
     position: absolute;
