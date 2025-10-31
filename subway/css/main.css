@@ -1,3 +1,4 @@
+/* -------------common-------------- */
 body {
     font-family: font_ns, sans-serif;
 }
@@ -7,9 +8,9 @@ body {
     min-width: 1280px;
 }
 
-/* header */
+/* -------------header-------------- */
 header {
-    position: absolute; /* wrap 기준 정렬 */
+    position: relative; /* wrap 기준 정렬 */
     /* 상단 초록 실선 삽입 */
     border-top: 5px solid #009223;
     width: 100%;
@@ -108,6 +109,12 @@ header .util_menu ul .global_subway a {
     overflow: hidden;
 }
 
+header .nav_bg {
+    position: absolute;
+    top: 165px;
+    width: 100%;
+    background-color: #fff;
+}
 
 #gnb {
     position: absolute;
@@ -168,4 +175,24 @@ header .util_menu ul .global_subway a {
     padding: 8px 0 9px;
 }
 
+/* -------------main-------------- */
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

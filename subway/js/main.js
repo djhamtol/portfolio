@@ -12,12 +12,12 @@ const init = () => {
 $(function() {
 
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
-    $('header').stop().animate({height:'425'}, 500);
+    $('.nav_bg').stop().animate({height:'300'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideDown(500);
   });
 
   $('#gnb').on('mouseleave', function(){
-    $('header').stop().animate({height:'165'}, 500);
+    $('.nav_bg').stop().animate({height:'0'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideUp(500);
   });
   
