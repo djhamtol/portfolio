@@ -10,9 +10,9 @@ const init = () => {
 
 
 $(function() {
-
+  
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
-    $('.nav_bg').stop().animate({height:'300'}, 500);
+    $('.nav_bg').stop().animate({height:'260'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideDown(500);
   });
 
