@@ -181,26 +181,39 @@ header .nav_bg {
       width: 100%;
       height: 100%;
       position: relative;
-    }
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-pagination {
-        position: absolute;
-        bottom: 47px;
-    }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
-    
+.swiper-pagination {
+    left: 585px !important;
+    bottom: 47px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px;
+    height: 10px;
+    border-radius: 30px;
+    background: #ffc300;
+    transition-duration: 0.3s;
+}
+
+
