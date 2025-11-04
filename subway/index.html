@@ -23,8 +23,11 @@
           clickable: true,
         },
       });
-    })
-    </script>
+    $('.swiper-pagination-bullet').click(function(){
+      swiper.autoplay.stop();
+    });     
+    }); 
+  </script>
   
   <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="js/main.js"></script>
@@ -110,13 +113,18 @@
       </div>
     </header>
     <!-- main -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img alt="쉽게 주문하고 썹 포인트 받자!" src="images/banner/1752817804858_xFRI17.jpg"></div>
-        <div class="swiper-slide"><img alt="오늘의 수프" src="images/banner/1752464309953_gUqC9j.jpg"></div>
-        <div class="swiper-slide"><img alt="토시 비프 이벤트" src="images/banner/1757326654711_0l49TY.jpg"></div>
+    <div class="main_tap_wapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="javascript:;"><img alt="쉽게 주문하고 썹 포인트 받자!" src="images/banner/1752817804858_xFRI17.jpg"></a></div>
+          <div class="swiper-slide"><a href="javascript:;"><img alt="오늘의 수프" src="images/banner/1752464309953_gUqC9j.jpg"></a></div>
+          <div class="swiper-slide"><a href="javascript:;"><img alt="토시 비프 이벤트" src="images/banner/1757326654711_0l49TY.jpg"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="quick_link">
+        
+      </div>
     </div>
 </body>
 </html>
