@@ -9,26 +9,7 @@
   <!-- swiper slide -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <script src="js/swiper-bundle.min.js"></script>
-  <script>
-    $(function() {
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    $('.swiper-pagination-bullet').click(function(){
-      swiper.autoplay.stop();
-    });     
-    }); 
-  </script>
-  
+
   <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="js/main.js"></script>
   <title>SUBWAY</title>
@@ -113,7 +94,7 @@
       </div>
     </header>
     <!-- main -->
-    <div class="main_tap_wapper">
+    <div class="main_tap_wrapper">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><a href="javascript:;"><img alt="쉽게 주문하고 썹 포인트 받자!" src="images/banner/1752817804858_xFRI17.jpg"></a></div>
@@ -122,9 +103,17 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="quick_link">
-        
+      <div class="quick_link_wrapper">
+        <a class="store" href="javascript:;">
+          <strong>매장 찾기</strong>
+        </a>
+        <a class="franchise" href="javascript:;">
+          <strong>가맹신청ㆍ문의</strong>
+        </a>
       </div>
+    </div>
+    <div>
+      
     </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ const init = () => {
 
 
 $(function() {
-  
+
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
     $('.nav_bg').stop().animate({height:'260'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideDown(500);
@@ -20,13 +20,26 @@ $(function() {
     $('.nav_bg').stop().animate({height:'0'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideUp(500);
   });
+
+  // swiper sllide
+  var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    $('.swiper-pagination-bullet').on('click', function(){
+      swiper.autoplay.stop();
+    });     
   
 });
 
 
-// $( document ).ready(function() {
-//     init(); 
-//     gnb();
-// })
 
 
