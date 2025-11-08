@@ -63,12 +63,12 @@ header .util_menu {
     top: 40px;
 }
 
-header .util_menu ul li {
+header .util_menu li {
     float: left;
     position: relative;
 }
 
-header .util_menu ul li a {
+header .util_menu li a {
     /* 로그인 회원가입 텍스트 조정 */
     color: #666666;
     font-size: 13px;
@@ -76,7 +76,7 @@ header .util_menu ul li a {
     line-height: 30px;
 }
 
-header .util_menu ul .signup {
+header .util_menu .signup {
     /* 점 있을 자리 만들기 */
     margin-left: 30px;
 }
@@ -94,11 +94,11 @@ header .util_menu .login ~ .signup::before {
     top: 50%;
 }
 
-header .util_menu ul .global_subway {
+header .util_menu .global_subway {
     margin-left: 15px;
 }
 
-header .util_menu ul .global_subway a {
+header .util_menu .global_subway a {
     /* 이미지 삽입 */
     background: url("../images/icon_utill_global.png") no-repeat;
     /* w, h를 쓰려면 블록요소로 */
@@ -177,9 +177,11 @@ header .nav_bg {
 }
 
 /* -------------main-------------- */
+/* -------------main_tap section-------------- */
 .main_tap_wrapper {
     height: 490px;
     background-color: #fff;
+    position: relative;
 }
 
 .main_tap_wrapper .swiper-slide {
@@ -281,3 +283,61 @@ header .nav_bg {
     position: relative;
     top: -2px;
 }
+
+/* -------------subway_menu section-------------- */
+.subway_menu_wrapper {
+    padding: 60px 0 0;
+}
+
+.subway_menu_wrapper .subway_menu_header {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 33px;
+}
+
+.subway_menu_wrapper .subway_menu_header h2{
+    color: #292929;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: font_sw, sans-serif;
+    background: url(../images/bul_tit.png) no-repeat 0 12px;
+    height: 60px;
+    padding: 17px 0 0 25px;
+}
+
+.subway_menu_wrapper .subway_menu_tab {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    display: flex;
+}
+
+.subway_menu_wrapper .subway_menu_tab li {
+    padding-right: 48px;
+    position: relative;
+}
+
+.subway_menu_wrapper .subway_menu_tab li::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #ddd;
+    position: absolute;
+    right: 23px;
+    top: 3px;
+}
+
+.subway_menu_wrapper .subway_menu_tab li:last-child::after {
+    content: "";
+    display: none;
+}
+
+.subway_menu_wrapper .subway_menu_tab li:last-child {
+    padding: 0;
+}
+
+.subway_menu_wrapper .subway_menu_tab li a {
+    color: #666;
+}
+

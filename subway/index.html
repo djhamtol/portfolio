@@ -23,13 +23,11 @@
         <h1 class="logo">
           <a href="/subway/index.html">SUBWAY</a>
         </h1>
-        <div class="util_menu">
-          <ul>
-            <li class="login"><a href="javascript:;">로그인</a></li>
-            <li class="signup"><a href="javascript:;">회원가입</a></li>
-            <li class="global_subway"><a href="javascript:;">Global Subway</a></li>
-          </ul>
-        </div>
+        <ul class="util_menu">
+          <li class="login"><a href="javascript:;">로그인</a></li>
+          <li class="signup"><a href="javascript:;">회원가입</a></li>
+          <li class="global_subway"><a href="javascript:;">Global Subway</a></li>
+        </ul>
         <nav id="gnb">
           <ul>
             <li>
@@ -94,26 +92,39 @@
       </div>
     </header>
     <!-- main -->
-    <div class="main_tap_wrapper">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="javascript:;"><img alt="쉽게 주문하고 썹 포인트 받자!" src="images/banner/1752817804858_xFRI17.jpg"></a></div>
-          <div class="swiper-slide"><a href="javascript:;"><img alt="오늘의 수프" src="images/banner/1752464309953_gUqC9j.jpg"></a></div>
-          <div class="swiper-slide"><a href="javascript:;"><img alt="토시 비프 이벤트" src="images/banner/1757326654711_0l49TY.jpg"></a></div>
+    <main>
+    <!-- main_tap -->
+      <section class="main_tap_wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="javascript:;"><img alt="쉽게 주문하고 썹 포인트 받자!" src="images/banner/1752817804858_xFRI17.jpg"></a></div>
+            <div class="swiper-slide"><a href="javascript:;"><img alt="오늘의 수프" src="images/banner/1752464309953_gUqC9j.jpg"></a></div>
+            <div class="swiper-slide"><a href="javascript:;"><img alt="토시 비프 이벤트" src="images/banner/1757326654711_0l49TY.jpg"></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="quick_link_wrapper">
-        <a class="store" href="javascript:;">
-          <strong>매장 찾기</strong>
-        </a>
-        <a class="franchise" href="javascript:;">
-          <strong>가맹신청ㆍ문의</strong>
-        </a>
-      </div>
-    </div>
-    <div>
-      
-    </div>
+        <div class="quick_link_wrapper">
+          <a class="store" href="javascript:;">
+            <strong>매장 찾기</strong>
+          </a>
+          <a class="franchise" href="javascript:;">
+            <strong>가맹신청ㆍ문의</strong>
+          </a>
+        </div>
+      </section>
+    <!-- subway_menu -->
+      <section class="subway_menu_wrapper">
+        <div class="subway_menu_header">
+          <h2>Subway's Menu</h2>
+          <ul class="subway_menu_tab">
+            <li><a href="javascript:;">클래식</a></li>
+            <li><a href="javascript:;">프레쉬&라이트</a></li>
+            <li><a href="javascript:;">프리미엄</a></li>
+            <li><a href="javascript:;">아침메뉴</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>  
+  </div>
 </body>
 </html>
