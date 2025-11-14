@@ -22,7 +22,7 @@ $(function() {
   });
 
   // swiper sllide
-  var swiper = new Swiper(".mySwiper", {
+  var mainTapSwiper = new Swiper(".main_tap", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -34,10 +34,18 @@ $(function() {
           clickable: true,
         },
       });
-    $('.swiper-pagination-bullet').on('click', function(){
-      swiper.autoplay.stop();
-    });     
+
+  $('.main_tap .swiper-pagination-bullet').on('click', function(){
+    mainTapSwiper.autoplay.stop();
+  });     
   
+  var subwayMenuSwiper = new Swiper(".subway_menu", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
 });
 
 

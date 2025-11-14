@@ -341,3 +341,10 @@ header .nav_bg {
     color: #666;
 }
 
+.subway_menu_wrapper .swiper-slide a {
+    display: block;
+}
+
+.subway_menu_wrapper .swiper-slide img {
+    display: block;
+}
