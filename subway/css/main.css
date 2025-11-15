@@ -185,7 +185,7 @@ header .nav_bg {
 }
 
 .main_tap_wrapper .swiper-slide {
-    overflow: hidden;
+    overflow: hidden; /* 하나의 슬라이드 영역에서 넘치지 않게 */
 }
 
 .main_tap_wrapper .swiper-slide a {
@@ -341,10 +341,21 @@ header .nav_bg {
     color: #666;
 }
 
+.subway_menu_wrapper .swiper-slide {
+    display: flex;
+    overflow: hidden;
+}
+
+.subway_menu_wrapper .swiper-slide li {
+    width: 260px;
+}
+
 .subway_menu_wrapper .swiper-slide a {
     display: block;
 }
 
 .subway_menu_wrapper .swiper-slide img {
     display: block;
+    width: 100%;
+    
 }
