@@ -337,6 +337,11 @@ header .nav_bg {
     padding: 0;
 }
 
+.subway_menu_wrapper .subway_menu_tab li.active a {
+    color: #009223;
+    font-weight: bold;
+}
+
 .subway_menu_wrapper .subway_menu_tab li a {
     color: #666;
 }

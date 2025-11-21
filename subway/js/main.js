@@ -11,6 +11,7 @@ const init = () => {
 
 $(function() {
 
+  // gnb
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
     $('.nav_bg').stop().animate({height:'260'}, 500);
     $('#gnb > ul > li > .depth2').stop().slideDown(500);
@@ -21,7 +22,7 @@ $(function() {
     $('#gnb > ul > li > .depth2').stop().slideUp(500);
   });
 
-  // swiper sllide
+  // main_tap swiper slide
   var mainTapSwiper = new Swiper(".main_tap", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -30,7 +31,7 @@ $(function() {
           disableOnInteraction: false,
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".main_tap .swiper-pagination",
           clickable: true,
         },
       });
@@ -39,12 +40,24 @@ $(function() {
     mainTapSwiper.autoplay.stop();
   });     
   
-  var subwayMenuSwiper = new Swiper(".subway_menu", {
+  // subway_menu swiper slide
+  // tab메뉴 슬라이드마다 각각 swiper초기화
+  $('.subway_menu').each(function () { 
+    new Swiper(this, {
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: $(this).find('.swiper-button-next')[0],
+        prevEl: $(this).find('.swiper-button-prev')[0],
       },
+      watchOverflow: false,
     });
+  });
+
+  $('.subway_menu_tab li a').on('click', function(){
+    let smt_ac = $(this).parent().index();
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    $('.subway_menu').hide();
+    $('.subway_menu').eq(smt_ac).show();
+  });
 
 });
 
