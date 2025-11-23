@@ -55,8 +55,7 @@ $(function() {
   $('.subway_menu_tab li a').on('click', function(){
     let smt_ac = $(this).parent().index();
     $(this).parent().addClass('active').siblings().removeClass('active');
-    $('.subway_menu').hide();
-    $('.subway_menu').eq(smt_ac).show();
+    $('.subway_menu').removeClass('active').eq(smt_ac).addClass('active');
   });
 
 });
