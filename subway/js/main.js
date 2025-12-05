@@ -10,7 +10,6 @@ const init = () => {
 
 
 $(function() {
-  init();
 
   // gnb
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
