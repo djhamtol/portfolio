@@ -10,6 +10,7 @@ const init = () => {
 
 
 $(function() {
+  init();
 
   // gnb
   $('#gnb > ul > li > .depth1').on('mouseenter', function(){
@@ -48,14 +49,16 @@ $(function() {
         nextEl: $(this).find('.swiper-button-next')[0],
         prevEl: $(this).find('.swiper-button-prev')[0],
       },
-      watchOverflow: false,
+      watchOverflow: false, // 슬라이드가 1개여도 네비게이션 보이게
     });
   });
 
-  $('.subway_menu_tab li a').on('click', function(){
+  $('.subway_menu_tab li a').on('click', function(e){
+    e.preventDefault();
     let smt_ac = $(this).parent().index();
     $(this).parent().addClass('active').siblings().removeClass('active');
-    $('.subway_menu').removeClass('active').eq(smt_ac).addClass('active');
+    $('.slide_view').removeClass('active').stop().animate({opacity: '0'}, 700, function() {
+    $(this).attr('style', '');}).eq(smt_ac).addClass('active').stop().animate({left:'0'}, 700);
   });
 
 });

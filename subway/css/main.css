@@ -348,14 +348,21 @@ header .nav_bg {
     letter-spacing: -0.03em;
 }
 
-.subway_menu_wrapper .subway_menu {
-    display: none;
-    width: 1200px;
-    margin: 0 auto;
+.subway_menu_wrapper .subway_menu_slides {
+    position: relative;
+    overflow: hidden;
+    height: 320px;
 }
 
-.subway_menu_wrapper .subway_menu.active {
-    display: block;
+.subway_menu_wrapper .slide_view {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+}
+
+.subway_menu_wrapper .subway_menu {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .subway_menu_wrapper .swiper-wrapper {
@@ -400,4 +407,27 @@ header .nav_bg {
     font-size: 13px;
     line-height: 21px;
     letter-spacing: -0.04em;
+}
+
+.subway_menu .swiper-button-next , .subway_menu .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon_event_slider_arr.png) no-repeat;
+    position: absolute;
+    top: 128px;
+    --swiper-navigation-size: 0;
+}
+
+.subway_menu .swiper-button-prev {
+    background-position: 0 0;
+    /* left: -150px; */
+}
+
+.subway_menu .swiper-button-next {
+    background-position: 100% 0;
+    /* right: -150px; */
+}
+
+.subway_menu .swiper-button-next:after , .subway_menu .swiper-button-prev:after {
+    display: none;
 }
