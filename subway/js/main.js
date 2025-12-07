@@ -51,15 +51,24 @@ $(function() {
       watchOverflow: false, // 슬라이드가 1개여도 네비게이션 보이게
     });
   });
-
+  
+  // tab메뉴 클릭시 슬라이드
   $('.subway_menu_tab li a').on('click', function(e){
     e.preventDefault();
     let smt_ac = $(this).parent().index();
     $(this).parent().addClass('active').siblings().removeClass('active');
     $('.slide_view').removeClass('active').stop().animate({opacity: '0'}, 700, function() {
     $(this).attr('style', '');}).eq(smt_ac).addClass('active').stop().animate({left:'0'}, 700);
+  
   });
 
+  $('.subway_menu_wrapper .subway_menu ul li').on('mouseenter', function () {
+    $(this).addClass('active').siblings().addClass('sibling');
+  });
+
+  $('.subway_menu_wrapper .subway_menu ul li').on('mouseleave', function () {
+    $(this).removeClass('active').siblings().removeClass('sibling');
+  });
 });
 
 
