@@ -178,6 +178,10 @@ header .nav_bg {
 
 /* -------------main-------------- */
 /* -------------main_tap section-------------- */
+main {
+    background: url(../images/bg_content.gif) repeat;
+}
+
 .main_tap_wrapper {
     height: 490px;
     background-color: #fff;
@@ -288,6 +292,7 @@ header .nav_bg {
 .subway_menu_wrapper {
     padding: 60px 0 0;
     height: 560px;
+    background-color: #fff;
 }
 
 .subway_menu_wrapper .subway_menu_header {
@@ -485,4 +490,87 @@ header .nav_bg {
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
+}
+
+/* -------------subway section-------------- */
+.subway_wrapper {
+    padding: 80px 0;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.subway_wrapper .content_top {
+    height: 300px;
+}
+
+.subway_wrapper .utilization {
+    background: url(../images/bg_utilization.png) no-repeat;
+    width: 400px;
+    height: 300px;
+    margin-left: 55px;
+    position: relative;
+    float: left;
+}
+
+.subway_wrapper .utilization p {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 39px;
+    top: 38px;
+}
+
+.subway_wrapper .utilization a {
+    position: absolute;
+    left: 41px;
+    bottom: 42px; 
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 92px;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.subway_wrapper .history {
+    background: url(../images/img_subway_history.png) no-repeat;
+    width: 825px;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.subway_wrapper .history p{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 410px;
+    top: 38px;
+}
+
+.subway_wrapper .history a {
+    position: absolute;
+    left: 410px;
+    bottom: 42px; 
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 128px;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.subway_wrapper .whats_news {
+    width: 870px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
 }
