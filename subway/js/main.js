@@ -24,8 +24,8 @@ $(function() {
 
   // main_tap swiper slide
   var mainTapSwiper = new Swiper(".main_tap", {
-        spaceBetween: 30,
-        centeredSlides: true,
+        // spaceBetween: 0,
+        // centeredSlides: false,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -59,9 +59,9 @@ $(function() {
     $(this).parent().addClass('active').siblings().removeClass('active');
     $('.slide_view').removeClass('active').stop().animate({opacity: '0'}, 700, function() {
     $(this).attr('style', '');}).eq(smt_ac).addClass('active').stop().animate({left:'0'}, 700);
-  
   });
 
+  // subway_menu 호버시 확대
   $('.subway_menu_wrapper .subway_menu ul li').on('mouseenter', function () {
     $(this).addClass('active').siblings().addClass('sibling');
   });
@@ -69,6 +69,15 @@ $(function() {
   $('.subway_menu_wrapper .subway_menu ul li').on('mouseleave', function () {
     $(this).removeClass('active').siblings().removeClass('sibling');
   });
+
+  // sponsor swiper slide
+  var sponsorSwiper = new Swiper(".sponsor", {
+      pagination: {
+        el: ".sponsor .swiper-pagination",
+        clickable: true,
+      },
+    });
+
 });
 
 

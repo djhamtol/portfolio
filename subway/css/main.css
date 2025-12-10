@@ -205,13 +205,19 @@ main {
 }
 
 .main_tap_wrapper .swiper-pagination {
-    left: 585px !important;
-    bottom: 47px !important;
+    width: 1170px;
+    left: 50%;
+    bottom: 47px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main_tap_wrapper .swiper-pagination-bullet {
     background: #fff;
     opacity: 1;
+    width: 10px;
+    height: 10px;
 }
 
 .main_tap_wrapper .swiper-pagination-bullet-active {
@@ -501,13 +507,13 @@ main {
 
 .subway_wrapper .content_top {
     height: 300px;
+    margin-left: 55px;
 }
 
 .subway_wrapper .utilization {
     background: url(../images/bg_utilization.png) no-repeat;
     width: 400px;
     height: 300px;
-    margin-left: 55px;
     position: relative;
     float: left;
 }
@@ -568,9 +574,178 @@ main {
     font-size: 16px;
 }
 
+.subway_wrapper .content_bottom {
+    margin: 30px 0 0 55px;
+    height: 300px;
+}
+
 .subway_wrapper .whats_news {
+    float: left;
     width: 870px;
     height: 300px;
     background-color: #fff;
     border-radius: 30px 0 30px 0;
+    position: relative;
+}
+
+.subway_wrapper .whats_news .news_header {
+    position: absolute;
+    top: 75px;
+    left: 60px;
+}
+
+.subway_wrapper .whats_news .news_header h2 {
+    background: url(../images/bul_tit.png) no-repeat;
+    padding: 17px 0 0 25px;
+    font-size: 30px;
+    font-weight: bold;
+    height: 60px;
+    color: #292929;
+}
+
+.subway_wrapper .whats_news .news_header p {
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+}
+
+.subway_wrapper .whats_news .board_list {
+    position: absolute;
+    left: 389px;
+    top: 76px;
+}
+
+.subway_wrapper .whats_news .board_list ul li {
+    margin-top: 21px;
+}
+
+.subway_wrapper .whats_news .board_list ul li:first-child {
+    margin-top: 0;
+}
+
+.subway_wrapper .whats_news .board_list ul li a {
+    color: #292929;
+    letter-spacing: -0.04em;
+    position: relative;
+    display: inline-block;
+}
+
+.subway_wrapper .whats_news .board_list ul li a:hover {
+    color: #009223;
+}
+
+.subway_wrapper .whats_news .board_list ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #009223;
+    transition: width 0.2s;
+}
+
+.subway_wrapper .whats_news .board_list ul li a:hover::after{
+    width: 100%;
+    float: left;
+}
+
+.subway_wrapper .whats_news .board_list > a {
+    display: inline-block;
+    padding: 33px 0 8px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.subway_wrapper .sponsor {
+    float: left;
+    width: 270px;
+    height: 300px;
+    margin-left: 30px;
+    border-radius: 0 30px 0 30px;
+}
+
+.subway_wrapper .sponsor .swiper-pagination {
+    right: 15px;
+    top: 14px;
+    left: auto;
+    bottom: auto;
+    width: auto;
+}
+
+.subway_wrapper .sponsor .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.subway_wrapper .sponsor .swiper-pagination-bullet-active {
+    width: 30px;
+    height: 10px;
+    border-radius: 30px;
+    background: #ffc300;
+    transition-duration: 0.3s;
+}
+
+.quick_menu {
+    padding: 40px 0 37px;
+    background-color: #fff;
+}
+.quick_menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.quick_menu ul li {
+
+}
+
+.quick_menu ul li a {
+    display: inline-block;
+    padding-left: 90px;
+    position: relative;
+}
+
+.quick_menu ul li .icon{
+    background: url(../images/icon_quickmenu.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.quick_menu ul li.qm1 .icon {
+    background-position: 0 0;
+}
+
+.quick_menu ul li.qm2 .icon {
+    background-position: -70px 0;
+}
+
+.quick_menu ul li.qm3 .icon {
+    background-position: -140px 0;
+}
+
+.quick_menu ul li.qm4 .icon {
+    background-position: -210px 0;
+}
+
+.quick_menu ul li strong {
+    display: block;
+    padding-top: 12px;
+    color: #292929;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+}
+
+.quick_menu ul li span {
+    display: block;
+    padding-top: 6px;
+    color: #999999;
+    font-size: 13px;
+    letter-spacing: -0.02em;
 }
