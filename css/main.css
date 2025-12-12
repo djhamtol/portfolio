@@ -1,8 +1,3 @@
-/* -------------common-------------- */
-body {
-    font-family: sans-serif;
-}
-
 #wrap {
     position: relative;
     min-width: 1280px;
@@ -218,6 +213,7 @@ main {
     opacity: 1;
     width: 10px;
     height: 10px;
+    transition-duration: 0.3s;
 }
 
 .main_tap_wrapper .swiper-pagination-bullet-active {
@@ -225,7 +221,6 @@ main {
     height: 10px;
     border-radius: 30px;
     background: #ffc300;
-    transition-duration: 0.3s;
 }
 
 .main_tap_wrapper .quick_link_wrapper {
@@ -597,6 +592,7 @@ main {
 .subway_wrapper .whats_news .news_header h2 {
     background: url(../images/bul_tit.png) no-repeat;
     padding: 17px 0 0 25px;
+    font-family: font_sw;
     font-size: 30px;
     font-weight: bold;
     height: 60px;
@@ -678,6 +674,7 @@ main {
     opacity: 1;
     width: 10px;
     height: 10px;
+    transition-duration: 0.3s;
 }
 
 .subway_wrapper .sponsor .swiper-pagination-bullet-active {
@@ -685,7 +682,6 @@ main {
     height: 10px;
     border-radius: 30px;
     background: #ffc300;
-    transition-duration: 0.3s;
 }
 
 .quick_menu {

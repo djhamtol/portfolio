@@ -1,8 +1,54 @@
+/* font */
+@font-face {
+  font-family:font_ns;
+  font-weight:normal;
+  src:local(※);
+	src: url(../font/NotoSansKR-Regular.eot);
+	src: url(../font/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+	url(../font/NotoSansKR-Regular.woff) format('woff'),
+	url(../font/NotoSansKR-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family:font_ns;
+  font-weight:300;
+  src:local(※);
+	src: url(../font/NotoSansKR-Medium.eot);
+	src: url(../font/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+	url(../font/NotoSansKR-Medium.woff) format('woff'),
+	url(../font/NotoSansKR-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family:font_ns;
+  font-weight:bold;
+  src:local(※);
+	src: url(../font/NotoSansKR-Bold.eot);
+	src: url(../font/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+	url(../font/NotoSansKR-Bold.woff) format('woff'),
+	url(../font/NotoSansKR-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family:font_sw;
+  font-weight:normal;
+  src:local(※);
+	src: url(../font/Subway-SixInch.eot);
+	src: url(../font/Subway-SixInch.eot?#iefix) format('embedded-opentype'),
+	url(../font/Subway-SixInch.woff) format('woff'),
+	url(../font/Subway-SixInch.ttf) format('truetype');
+}
+@font-face {
+  font-family:font_sw;
+  font-weight:bold;
+  src:local(※);
+	src: url(../font/Subway-Footlong.eot);
+	src: url(../font/Subway-Footlong.eot?#iefix) format('embedded-opentype'),
+	url(../font/Subway-Footlong.woff) format('woff'),
+	url(../font/Subway-Footlong.ttf) format('truetype');
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +66,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 	line-height: 120%;
 }
@@ -30,6 +75,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: font_ns, sans-serif;
 	font-size: 16px;
 	color: #666666;
 }
