@@ -13,8 +13,6 @@ $(function() {
 
   // main_tap swiper slide
   var mainTapSwiper = new Swiper(".main_tap", {
-        // spaceBetween: 0,
-        // centeredSlides: false,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
