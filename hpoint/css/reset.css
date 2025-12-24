@@ -118,6 +118,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
   box-sizing: border-box;
   line-height: normal;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -162,10 +164,10 @@ button {
 
 .sr-only {
 	position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 :focus-visible {
