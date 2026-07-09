@@ -1,0 +1,85 @@
+/* ======================= variable ======================= */
+:root {
+    --color-primary: #2F3438;
+    --bg-primary: #fff;
+}
+
+/* ======================= reset ======================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    font-family: "Pretendard Variable", "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+    color: var(--color-primary);
+    line-height: 1.5;
+    word-break: keep-all; /* 한국 사이트 한정*/
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    border: 0;
+    background: transparent;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+ul li,
+ol li {
+	display: block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ======================= util ======================= */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+:focus-visible {
+    outline: 2px solid blue;
+}
