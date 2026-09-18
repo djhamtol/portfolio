@@ -1,0 +1,49 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+:focus-visible {
+    outline: 2px solid blue;
+}
+
+.wrap {
+    position: relative;
+    min-width: 280px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.side-layout {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+.section-gap {
+    padding-block: 80px;
+}
+
+@media (max-width: 1500px) { /* 콘텐츠와 사이드바 겹치는 지점에서 사이드바 영역 확보 */
+    .side-layout {
+        padding-right: 116px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .side-layout {
+        padding-right: 0;
+    }
+
+    .section-gap {
+        padding-block: 40px;
+    }
+}

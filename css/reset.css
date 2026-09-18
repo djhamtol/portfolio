@@ -1,16 +1,14 @@
-/* ======================= variable ======================= */
-:root {
-    --color-primary: #2F3438;
-    --bg-primary: #fff;
-}
-
-/* ======================= reset ======================= */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    overflow-x: clip;
 }
 
 html {
@@ -20,10 +18,10 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: var(--bg-primary);
-    font-family: "Pretendard Variable", "Noto Sans KR", sans-serif;
+    background-color: var(--color-white);
+    font-family: "Wanted Sans Variable", "Pretendard Variable", "Noto Sans KR", sans-serif;
     font-size: 1rem;
-    color: var(--color-primary);
+    color: var(--color-text-primary);
     line-height: 1.5;
     word-break: keep-all; /* 한국 사이트 한정*/
 }
@@ -69,17 +67,4 @@ a {
 
 button {
     cursor: pointer;
-}
-
-/* ======================= util ======================= */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-}
-
-:focus-visible {
-    outline: 2px solid blue;
 }
