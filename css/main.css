@@ -696,7 +696,7 @@ main {
     display: block;
 }
 
-.about-marquee {
+.marquee {
     margin-top: 80px;
 }
 
@@ -1337,7 +1337,7 @@ footer {
         width: 250px;
     }
 
-    .about-marquee {
+    .marquee {
         margin-top: 40px;
     }
 
