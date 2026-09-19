@@ -23,7 +23,7 @@ const mainView = {
         const header = document.querySelector('header');
         const hamHead = document.querySelector('.hamster-head');
         const pcLinks = document.querySelector('.portfolio-links--pc');
-        const homeContent = document.querySelector('.home__content');
+        const intro = document.querySelector('.intro');
 
         const headline = document.querySelector('.headline');
 
@@ -37,9 +37,6 @@ const mainView = {
 
         // 키워드 등장
         const playIntro = () => {
-            document.documentElement.classList.add('is-intro'); // 인트로 진행시 스크롤 잠금
-            document.body.classList.add('is-intro');
-
             const tl = gsap.timeline();
 
             const duration = 0.6;
@@ -49,7 +46,8 @@ const mainView = {
                 y: 0,
                 opacity: 1,
                 duration, //duration: duration
-                ease //ease: ease
+                ease, //ease: ease
+                delay: 0.4
             })
             .to(secondKeyword, {
                 y: 0,
@@ -66,10 +64,7 @@ const mainView = {
             const state = Flip.getState(keywords);
 
             // 2. 레이아웃 변경
-            homeContent.prepend(headline);
-
-            firstPhrase.style.display = 'inline-block';
-            secondPhrase.style.display = 'inline-block';
+            intro.classList.add('is-complete');
             
             // 3. 변경 전 위치에서 변경 후 위치로 애니메이션
             Flip.from(state, {
@@ -96,7 +91,7 @@ const mainView = {
                 opacity: 1,
                 duration: phraseDuration,
                 ease: phraseEase
-            }, '+=0.2')
+            }, '+=0.3')
             .to(secondPhrase, {
                 x: 0,
                 opacity: 1,
@@ -107,7 +102,7 @@ const mainView = {
                 top: 0,
                 duration: elDuration,
                 ease: elEase
-            })
+            }, '+=0.1')
             .to(pcLinks, { 
                 x: 0,
                 duration: elDuration,
@@ -121,7 +116,6 @@ const mainView = {
             }, '<')
             .call(() => {
                 document.documentElement.classList.remove('is-intro');
-                document.body.classList.remove('is-intro');
             });
         };
 
@@ -129,13 +123,9 @@ const mainView = {
         const skipIntro = () => {
             // 인트로 스크롤 잠금 해제
             document.documentElement.classList.remove('is-intro');
-            document.body.classList.remove('is-intro');
 
             // 최종 레이아웃으로 변경
-            homeContent.prepend(headline);
-
-            firstPhrase.style.display = 'inline-block';
-            secondPhrase.style.display = 'inline-block';
+            intro.classList.add('is-complete');
 
             // 최종 상태 즉시 적용
             gsap.set(firstKeyword, {

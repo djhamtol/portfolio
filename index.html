@@ -25,8 +25,13 @@
 
     <!-- script -->
     <script>
-        if (sessionStorage.getItem('isPlayedIntro')) {
+        const isPlayedIntro = sessionStorage.getItem('isPlayedIntro');
+        const isMobile = window.innerWidth <= 1024;
+
+        if (isPlayedIntro || isMobile) {
             document.documentElement.classList.add('is-intro-skip');
+        } else {
+            document.documentElement.classList.add('is-intro'); // 인트로 진행시 스크롤 잠금
         }
     </script>
 
@@ -40,16 +45,6 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="intro">
-            <h1 class="headline">
-                <span class="line">
-                    <strong class="keyword-first keyword">Responsibility</strong> <span class="phrase-first phrase">is my attitude,</span>
-                </span>
-                <span class="line">
-                    <strong class="keyword-second keyword">Improvement</strong> <span class="phrase-second phrase">is my habit.</span>
-                </span>
-            </h1>
-        </div>
         <header>
             <div class="container">
                 <nav class="gnb--pc gnb">
@@ -85,12 +80,13 @@
                 </button>
                 <div class="mobile-panel__content">
                     <div class="portfolio-links--mo portfolio-links">
-                        <a href="https://www.figma.com/proto/ut98jwXiif5uHSX9xhMKYc/Untitled?node-id=0-1&t=cqPDzW5Yicdwmwc3-1" target="_blank">와이어프레임 보기
+                        <a href="https://www.figma.com/design/ut98jwXiif5uHSX9xhMKYc/portfolio-wireframe?node-id=0-1&t=CYLRZaTbjAxECU5x-1" target="_blank">와이어프레임 보기
                             <svg width="16" height="16" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.25 3.25H3.25C2.71957 3.25 2.21086 3.46071 1.83579 3.83579C1.46071 4.21086 1.25 4.71957 1.25 5.25V15.25C1.25 15.7804 1.46071 16.2891 1.83579 16.6642C2.21086 17.0393 2.71957 17.25 3.25 17.25H13.25C13.7804 17.25 14.2891 17.0393 14.6642 16.6642C15.0393 16.2891 15.25 15.7804 15.25 15.25V9.25M8.25 10.25L17.25 1.25M17.25 6.25V1.25H12.25" stroke="var(--color-white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a href="https://github.com/djhamtol/portfolio" target="_blank">설명 보기
+                        <a href="https://github.com/djhamtol/portfolio" target="_blank">
+                            설명 보기
                             <svg width="16" height="16" fill="var(--color-white)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
                         </a>
                     </div>
@@ -119,10 +115,30 @@
         <main>
             <section id="home" class="home page">
                 <div class="container">
-                    <div class="home__content"><!-- flip - headline 위치 변화 종착지 --></div>
+                    <!-- <div class="intro">
+                        <h1 class="headline">
+                            <span class="line">
+                                <strong class="keyword-first keyword">Responsibility</strong> <span class="phrase-first phrase">is my attitude,</span>
+                            </span>
+                            <span class="line">
+                                <strong class="keyword-second keyword">Improvement</strong> <span class="phrase-second phrase">is my habit.</span>
+                            </span>
+                        </h1>
+                    </div> -->
+                    <!-- <div class="home__content">flip - headline 위치 변화 종착지</div> -->
+                    <div class="intro">
+                        <h1 class="headline">
+                            <span class="line">
+                                <strong class="keyword-first keyword">Responsibility</strong> <span class="phrase-first phrase">is my attitude,</span>
+                            </span>
+                            <span class="line">
+                                <strong class="keyword-second keyword">Improvement</strong> <span class="phrase-second phrase">is my habit.</span>
+                            </span>
+                        </h1>
+                    </div>
                 </div>
                 <div class="portfolio-links--pc portfolio-links">
-                    <a href="https://www.figma.com/design/ut98jwXiif5uHSX9xhMKYc/portfolio-wireframe?node-id=0-1&t=Pw1q8tuLdXs0zPz5-1" target="_blank">
+                    <a href="https://www.figma.com/design/ut98jwXiif5uHSX9xhMKYc/portfolio-wireframe?node-id=0-1&t=CYLRZaTbjAxECU5x-1" target="_blank">
                         와이어프레임 보기
                         <svg width="16" height="16" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.25 3.25H3.25C2.71957 3.25 2.21086 3.46071 1.83579 3.83579C1.46071 4.21086 1.25 4.71957 1.25 5.25V15.25C1.25 15.7804 1.46071 16.2891 1.83579 16.6642C2.21086 17.0393 2.71957 17.25 3.25 17.25H13.25C13.7804 17.25 14.2891 17.0393 14.6642 16.6642C15.0393 16.2891 15.25 15.7804 15.25 15.25V9.25M8.25 10.25L17.25 1.25M17.25 6.25V1.25H12.25" stroke="var(--color-white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -234,7 +250,7 @@
                                                 헤더 인터랙션과 Day.js, Flatpickr 라이브러리를 활용한 달력 구현에 집중했습니다.
                                             </p>
                                             <span class="contribution">퍼블리싱 100%, 반응형</span>
-                                            <div class="skills">
+                                            <div class="projects__skills">
                                                 <span>HTML5</span>
                                                 <span>CSS3</span>
                                                 <span>JavaScript</span>
@@ -255,7 +271,7 @@
                                                 GSAP ScrollTrigger를 활용한 페이지별 인터랙션 구현에 집중했습니다.
                                             </p>
                                             <span class="contribution">퍼블리싱 100%, 반응형</span>
-                                            <div class="skills">
+                                            <div class="projects__skills">
                                                 <span>HTML5</span>
                                                 <span>CSS3</span>
                                                 <span>jQuery</span>
@@ -275,7 +291,7 @@
                                                 학습 과정에서 작성한 주석이 다수 포함되어 있습니다.
                                             </p>
                                             <span class="contribution">퍼블리싱 100%, 적응형</span>
-                                            <div class="skills">
+                                            <div class="projects__skills">
                                                 <span>HTML5</span>
                                                 <span>CSS3</span>
                                                 <span>jQuery</span>
