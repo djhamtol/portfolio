@@ -743,11 +743,11 @@ main {
 }
 
 .about-marquee__list span {
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .skills-marquee__list span {
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 
 @keyframes about-marquee {
