@@ -599,14 +599,17 @@ const mainView = {
 
         open.addEventListener('click', () => {
             panel.classList.add('active');
+            open.setAttribute('aria-expanded', 'true');
         });
 
         dim.addEventListener('click', () => {
             panel.classList.remove('active');
+            open.setAttribute('aria-expanded', 'false');
         });
 
         close.addEventListener('click', () => {
             panel.classList.remove('active');
+            open.setAttribute('aria-expanded', 'false');
         });
 
         // 모바일 gnb 메뉴 클릭시 패널 닫기

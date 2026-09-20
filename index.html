@@ -66,16 +66,16 @@
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="hamburger" aria-label="메뉴 열기">
+                <button type="button" class="hamburger" aria-label="메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">
                     <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
                 </button>
             </div>
             <div class="header__dim"></div>
         </header>
-        <div class="mobile-panel">
+        <div id="mobile-panel" class="mobile-panel">
             <div class="mobile-panel__dim"></div>
             <div class="mobile-panel__area">
-                <button type="button" class="mobile-panel__close" aria-label="메뉴 닫기">
+                <button type="button" class="mobile-panel__close" aria-label="메뉴 닫기" aria-controls="mobile-panel">
                     <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
                 </button>
                 <div class="mobile-panel__content">
@@ -181,7 +181,7 @@
                                     <div class="thumbnail-wrap active">
                                         <div class="thumbnail">
                                             <a href="https://djhamtol.github.io/ohouse/index.html" target="_blank">
-                                                <img class="pc-img" src="images/ohouse_pc.png" alt="오늘의 집">
+                                                <img class="pc-img" src="images/ohouse_pc.webp" alt="오늘의 집">
                                                 <svg class="view-more" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="32.0002" cy="32" r="28.8" fill="#FFB962"/>
                                                     <path d="M32 25.25H25.25C24.6533 25.25 24.081 25.4871 23.659 25.909C23.2371 26.331 23 26.9033 23 27.5V38.75C23 39.3467 23.2371 39.919 23.659 40.341C24.081 40.7629 24.6533 41 25.25 41H36.5C37.0967 41 37.669 40.7629 38.091 40.341C38.5129 39.919 38.75 39.3467 38.75 38.75V32M30.875 33.125L41 23M41 28.625V23H35.375" stroke="#F4F4F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -192,7 +192,7 @@
                                     <div class="thumbnail-wrap">
                                         <div class="thumbnail">
                                             <a href="https://djhamtol.github.io/airbnb/index.html" target="_blank">
-                                                <img class="pc-img" src="images/airbnb_pc.png" alt="에어비앤비">
+                                                <img class="pc-img" src="images/airbnb_pc.webp" alt="에어비앤비">
                                                 <svg class="view-more" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="32.0002" cy="32" r="28.8" fill="#FFB962"/>
                                                     <path d="M32 25.25H25.25C24.6533 25.25 24.081 25.4871 23.659 25.909C23.2371 26.331 23 26.9033 23 27.5V38.75C23 39.3467 23.2371 39.919 23.659 40.341C24.081 40.7629 24.6533 41 25.25 41H36.5C37.0967 41 37.669 40.7629 38.091 40.341C38.5129 39.919 38.75 39.3467 38.75 38.75V32M30.875 33.125L41 23M41 28.625V23H35.375" stroke="#F4F4F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,7 +203,7 @@
                                     <div class="thumbnail-wrap">
                                         <div class="thumbnail">
                                             <a href="https://djhamtol.github.io/hpoint/index.html" target="_blank">
-                                                <img class="pc-img" src="images/hpoint_pc.png" alt="현대 포인트">
+                                                <img class="pc-img" src="images/hpoint_pc.webp" alt="현대 포인트">
                                                 <svg class="view-more" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="32.0002" cy="32" r="28.8" fill="#FFB962"/>
                                                     <path d="M32 25.25H25.25C24.6533 25.25 24.081 25.4871 23.659 25.909C23.2371 26.331 23 26.9033 23 27.5V38.75C23 39.3467 23.2371 39.919 23.659 40.341C24.081 40.7629 24.6533 41 25.25 41H36.5C37.0967 41 37.669 40.7629 38.091 40.341C38.5129 39.919 38.75 39.3467 38.75 38.75V32M30.875 33.125L41 23M41 28.625V23H35.375" stroke="#F4F4F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -214,7 +214,7 @@
                                     <div class="thumbnail-wrap">
                                         <div class="thumbnail">
                                             <a href="https://djhamtol.github.io/subway/index.html" target="_blank">
-                                                <img class="pc-img" src="images/subway_pc.png" alt="서브웨이">
+                                                <img class="pc-img" src="images/subway_pc.webp" alt="서브웨이">
                                                 <svg class="view-more" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="32.0002" cy="32" r="28.8" fill="#FFB962"/>
                                                     <path d="M32 25.25H25.25C24.6533 25.25 24.081 25.4871 23.659 25.909C23.2371 26.331 23 26.9033 23 27.5V38.75C23 39.3467 23.2371 39.919 23.659 40.341C24.081 40.7629 24.6533 41 25.25 41H36.5C37.0967 41 37.669 40.7629 38.091 40.341C38.5129 39.919 38.75 39.3467 38.75 38.75V32M30.875 33.125L41 23M41 28.625V23H35.375" stroke="#F4F4F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -690,14 +690,14 @@
                         <path d="M1440.27 -0.126953L1440.87 1.24616L1441.99 0.756118L1441.74 -0.435315L1440.27 -0.126953ZM784.265 181.895L784.157 180.398L783.198 180.467L782.86 181.367L784.265 181.895ZM741.663 257.8L742.689 258.894H742.689L741.663 257.8ZM721.599 269.027L721.874 270.502V270.502L721.599 269.027ZM702.954 266.041L702.269 267.375V267.375L702.954 266.041ZM673 231.562L671.677 232.27V232.27L673 231.562ZM654.312 184.097L655.754 183.684L655.455 182.641L654.371 182.598L654.312 184.097ZM-2 -0.15625L-3.46037 -0.498775L-3.73188 0.658804L-2.66683 1.18738L-2 -0.15625ZM-1.33301 -3V-4.5H-2.52189L-2.79338 -3.34252L-1.33301 -3ZM1439.67 -3L1441.14 -3.30836L1440.88 -4.5H1439.67V-3ZM1440.27 -0.126953L1439.67 -1.50007C1334.54 44.7277 1068.51 160.022 784.157 180.398L784.265 181.895L784.372 183.391C1069.3 162.974 1335.74 47.4769 1440.87 1.24616L1440.27 -0.126953ZM784.265 181.895L782.86 181.367C768.152 220.539 753.951 244.23 740.637 256.705L741.663 257.8L742.689 258.894C756.518 245.935 770.916 221.713 785.669 182.422L784.265 181.895ZM741.663 257.8L740.637 256.705C733.96 262.963 727.506 266.399 721.323 267.553L721.599 269.027L721.874 270.502C728.762 269.216 735.715 265.43 742.689 258.894L741.663 257.8ZM721.599 269.027L721.323 267.553C715.141 268.707 709.23 267.579 703.64 264.707L702.954 266.041L702.269 267.375C708.366 270.508 714.95 271.794 721.874 270.502L721.599 269.027ZM702.954 266.041L703.64 264.707C692.458 258.962 682.558 246.242 674.323 230.855L673 231.562L671.677 232.27C679.987 247.796 690.249 261.2 702.269 267.375L702.954 266.041ZM673 231.562L674.323 230.855C666.535 216.304 660.236 199.366 655.754 183.684L654.312 184.097L652.869 184.509C657.393 200.334 663.763 217.482 671.677 232.27L673 231.562ZM654.312 184.097L654.371 182.598C357.743 170.828 96.1244 46.8676 -1.33317 -1.49988L-2 -0.15625L-2.66683 1.18738C94.8523 49.5854 356.953 173.799 654.252 185.596L654.312 184.097ZM-2 -0.15625L-0.539631 0.186275L0.127361 -2.65748L-1.33301 -3L-2.79338 -3.34252L-3.46037 -0.498775L-2 -0.15625ZM-1.33301 -3V-1.5H1439.67V-3V-4.5H-1.33301V-3ZM1439.67 -3L1438.2 -2.69164L1438.8 0.181409L1440.27 -0.126953L1441.74 -0.435315L1441.14 -3.30836L1439.67 -3Z" fill="black"/>
                     </svg>
                     <p class="hamster-butt__sentence">Thank you ~ ♥</p>
-                    <button type="button" class="poop" aria-label="이메일 전송 창 열기">
+                    <button type="button" class="poop" aria-label="이메일 전송 창 열기"> <!-- aria-expanded, aria-controls -->
                         <span class="poop__contact">contact!</span>
                         <span class="poop__click">click ▲</span>
                     </button>
                 </div>
             </div>
         </main>
-        <!-- <div class="contact-modal">
+        <!-- <div class="contact-modal" role="dialog">
             <div class="contact-modal__dim"></div>
             <div class="contact-modal__content">
                 <button type="button" class="contact-modal__close" aria-label="이메일 전송 창 닫기">X</button>
