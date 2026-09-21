@@ -5,6 +5,9 @@ HTML, CSS, JavaScript를 기반으로 반응형 웹과 다양한 인터랙션을
 프로젝트마다 새로운 기술과 구현 방법을 적용하고, 더 나은 구조와 사용성을 고민하며 개선하는 과정을 중요하게 생각합니다.<br>
 이 포트폴리오 사이트는 저의 시그니처인 햄스터를 활용해 직접 와이어프레임을 제작하고, 인터랙션과 반응형 레이아웃을 적용하여 완성했습니다.
 
+## 💡 와이어프레임
+[와이어프레임 보기 ↗](https://www.figma.com/design/ut98jwXiif5uHSX9xhMKYc/portfolio-wireframe?node-id=0-1&t=CYLRZaTbjAxECU5x-1)
+
 ## 🐹 담당
 
 - 디자인 100%
