@@ -1,4 +1,4 @@
-# [portfolio](https://djhamtol.github.io/portfolio/)
+# [Portfolio](https://djhamtol.github.io/portfolio/)
 
 >웹 퍼블리셔 포트폴리오입니다.<br>
 HTML, CSS, JavaScript를 기반으로 반응형 웹과 다양한 인터랙션을 구현하며 웹 퍼블리싱의 기본기를 쌓고, 실무에 필요한 역량을 꾸준히 학습하고 있습니다.<br>
