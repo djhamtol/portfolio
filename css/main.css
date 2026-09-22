@@ -303,6 +303,8 @@ main {
 }
 
 #projects .thumbnail .view-more {
+    width: 64px;
+    height: 64px;
     position: absolute;
     top: 6%;
     right: 6%;
@@ -1261,6 +1263,10 @@ footer {
         aspect-ratio: 3 / 2;
     }
 
+    #projects .thumbnail .view-more {
+        opacity: 1;
+    }
+
     #projects .info-wrap {
         align-items: stretch;
         padding-inline: 20px;
@@ -1501,6 +1507,11 @@ footer {
 }
 
 @media (max-width: 500px) {
+    #projects .thumbnail .view-more {
+        width: 48px;
+        height: 48px;
+    }
+
     .skill-list {
         grid-template-columns: 1fr;
         max-width: 300px;
